@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.main');
+    return view('pages.home');
+});
+
+Route::get('/single.html', function () {
+    return view('pages.detail');
+});
+
+Route::get('/index.html', function () {
+    return view('pages.home');
 });
