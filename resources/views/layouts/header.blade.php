@@ -36,7 +36,7 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                     <div class="topsearch text-right">
-                        <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-search"></i> Search</a>
+                        <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-search"></i> Cari</a>
                     </div><!-- end search -->
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -64,7 +64,7 @@
                 <div class="collapse navbar-collapse justify-content-md-center" id="cloapediamenu">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link color-pink-hover" href="index.html">Home</a>
+                            <a class="nav-link color-pink-hover" href="index.html">Beranda</a>
                         </li>
                         <li class="nav-item dropdown has-submenu menu-large hidden-md-down hidden-sm-down hidden-xs-down">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
@@ -72,10 +72,10 @@
                                 <li>
                                     <div class="mega-menu-content clearfix">
                                         <div class="tab">
-                                            <button class="tablinks active" onclick="openCategory(event, 'cat01')">Beauty</button>
+                                            <button class="tablinks active" onclick="openCategory(event, 'cat01')">Kecantikan</button>
                                             <button class="tablinks" onclick="openCategory(event, 'cat02')">Fashion</button>
                                             <button class="tablinks" onclick="openCategory(event, 'cat03')">Travel</button>
-                                            <button class="tablinks" onclick="openCategory(event, 'cat04')">Architecture</button>
+                                            <button class="tablinks" onclick="openCategory(event, 'cat04')">Arsitektur</button>
                                             <button class="tablinks" onclick="openCategory(event, 'cat05')">Recipes</button>
                                         </div>
 
@@ -455,10 +455,10 @@
                             <a class="nav-link color-pink-hover" href="blog-category-01.html">Fashion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link color-red-hover" href="blog-category-02.html">Food</a>
+                            <a class="nav-link color-red-hover" href="blog-category-02.html">Makanan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link color-aqua-hover" href="blog-category-03.html">Lifestyle</a>
+                            <a class="nav-link color-aqua-hover" href="blog-category-03.html">Gaya Hidup</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link color-green-hover" href="blog-category-04.html">Travel</a>
@@ -467,7 +467,7 @@
                             <a class="nav-link color-yellow-hover" href="blog-category-05.html"><i class="fa fa-play-circle-o"></i> Vlogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link color-grey-hover" href="blog-category-06.html">Health</a>
+                            <a class="nav-link color-grey-hover" href="blog-category-06.html">Kesehatan</a>
                         </li>
                     </ul>
                 </div>
