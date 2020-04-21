@@ -26,7 +26,8 @@
 
             <div class="center-side">
                 <div class="masonry-box post-media">
-                    <img src="assets/upload/blog_masonry_02.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/{{ $slides[1]->foto }}" alt="" class="img-fluid" style="height:214px;">
+                    <!-- <img src="assets/upload/blog_masonry_02.jpg" alt="" class="img-fluid"> -->
                     <div class="shadoweffect">
                         <div class="shadow-desc">
                             <div class="blog-meta">
@@ -40,7 +41,8 @@
                 </div><!-- end post-media -->
 
                 <div class="masonry-box small-box post-media">
-                    <img src="assets/upload/blog_masonry_03.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/{{ $slides[2]->foto }}" alt="" class="img-fluid">
+                    <!-- <img src=" assets/upload/blog_masonry_03.jpg" alt="" class="img-fluid"> -->
                     <div class="shadoweffect">
                         <div class="shadow-desc">
                             <div class="blog-meta">
@@ -52,7 +54,8 @@
                 </div><!-- end post-media -->
 
                 <div class="masonry-box small-box post-media">
-                    <img src="assets/upload/blog_masonry_04.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/{{ $slides[1]->foto }}" alt="" class="img-fluid">
+                    <!-- <img src="assets/upload/blog_masonry_04.jpg" alt="" class="img-fluid"> -->
                     <div class="shadoweffect">
                         <div class="shadow-desc">
                             <div class="blog-meta">
@@ -66,7 +69,8 @@
 
             <div class="right-side hidden-md-down">
                 <div class="masonry-box post-media">
-                    <img src="assets/upload/blog_masonry_05.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/{{ $slides[4]->foto }}" alt="" class="img-fluid" style="height:384px;">
+                    <!-- <img src="assets/upload/blog_masonry_05.jpg" alt="" class="img-fluid"> -->
                     <div class="shadoweffect">
                         <div class="shadow-desc">
                             <div class="blog-meta">
