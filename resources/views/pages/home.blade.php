@@ -5,15 +5,18 @@
 <section class="section first-section">
     <div class="container-fluid">
         <div class="masonry-blog clearfix">
+            @foreach($slides as $slide)
+            @endforeach
             <div class="left-side">
                 <div class="masonry-box post-media">
-                    <img src="assets/upload/blog_masonry_01.jpg" alt="" class="img-fluid">
+                    <!-- <img src="assets/upload/blog_masonry_01.jpg" alt="" class="img-fluid"> -->
+                    <img src="assets/img/{{ $slides[0]->foto }}" alt="" class="img-fluid" style="height:384px;">
                     <div class="shadoweffect">
                         <div class="shadow-desc">
                             <div class="blog-meta">
-                                <span class="bg-aqua"><a href="blog-category-01.html" title="">Lifestyle</a></span>
-                                <h4><a href="single.html" title="">The golden rules you need to know for a positive life</a></h4>
-                                <small><a href="single.html" title="">24 July, 2017</a></small>
+                                <span class="bg-aqua"><a href="blog-category-01.html" title="">{{ $slides[0]->kategori }}</a></span>
+                                <h4><a href="{{ $slides[0]->path }}" title="">{{ $slides[0]->judul }}</a></h4>
+                                <small><a href="single.html" title="">{{ $slides[0]->created_at }}</a></small>
                                 <small><a href="blog-author.html" title="">by Amanda</a></small>
                             </div><!-- end meta -->
                         </div><!-- end shadow-desc -->
