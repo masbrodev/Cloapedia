@@ -31,9 +31,9 @@
                     <div class="shadoweffect">
                         <div class="shadow-desc">
                             <div class="blog-meta">
-                                <span class="bg-green"><a href="blog-category-01.html" title="">Travel</a></span>
-                                <h4><a href="single.html" title="">5 places you should see</a></h4>
-                                <small><a href="single.html" title="">24 July, 2017</a></small>
+                                <span class="bg-green"><a href="blog-category-01.html" title="">{{ $slides[1]->kategori }}</a></span>
+                                <h4><a href="{{ $slides[1]->path }}" title="">{{ $slides[1]->judul }}</a></h4>
+                                <small><a href="single.html" title="">{{ $slides[1]->created_at }}</a></small>
                                 <small><a href="blog-author.html" title="">by Amanda</a></small>
                             </div><!-- end meta -->
                         </div><!-- end shadow-desc -->
@@ -46,8 +46,8 @@
                     <div class="shadoweffect">
                         <div class="shadow-desc">
                             <div class="blog-meta">
-                                <span class="bg-green"><a href="blog-category-01.html" title="">Travel</a></span>
-                                <h4><a href="single.html" title="">Separate your place with exotic hotels</a></h4>
+                                <span class="bg-green"><a href="{{ $slides[2]->kategori }}" title="">{{ $slides[2]->kategori }}</a></span>
+                                <h4><a href="{{ $slides[2]->path }}" title="">{{ $slides[2]->judul }}</a></h4>
                             </div><!-- end meta -->
                         </div><!-- end shadow-desc -->
                     </div><!-- end shadow -->
@@ -59,8 +59,8 @@
                     <div class="shadoweffect">
                         <div class="shadow-desc">
                             <div class="blog-meta">
-                                <span class="bg-green"><a href="blog-category-01.html" title="">Travel</a></span>
-                                <h4><a href="single.html" title="">What you need to know for child health</a></h4>
+                                <span class="bg-green"><a href="{{ $slides[3]->kategori }}" title="">{{ $slides[3]->kategori }}</a></span>
+                                <h4><a href="{{ $slides[3]->judul }}" title="">{{ $slides[3]->judul }}</a></h4>
                             </div><!-- end meta -->
                         </div><!-- end shadow-desc -->
                     </div><!-- end shadow -->
@@ -74,9 +74,9 @@
                     <div class="shadoweffect">
                         <div class="shadow-desc">
                             <div class="blog-meta">
-                                <span class="bg-aqua"><a href="blog-category-01.html" title="">Lifestyle</a></span>
-                                <h4><a href="single.html" title="">The rules you need to know for a happy union</a></h4>
-                                <small><a href="single.html" title="">03 July, 2017</a></small>
+                                <span class="bg-aqua"><a href="{{ $slides[4]->kategori }}" title="">{{ $slides[4]->kategori }}</a></span>
+                                <h4><a href="{{ $slides[4]->path }}" title="">{{ $slides[4]->judul }}</a></h4>
+                                <small><a href="single.html" title="">{{ $slides[4]->created_at }}</a></small>
                                 <small><a href="blog-author.html" title="">by Jessica</a></small>
                             </div><!-- end meta -->
                         </div><!-- end shadow-desc -->
