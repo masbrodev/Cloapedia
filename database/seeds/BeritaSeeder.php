@@ -29,7 +29,10 @@ class BeritaSeeder extends Seeder
                     '2016_11_14_15_40_24_android.jpg',
                     '2016_11_14_09_54_08_Selection_004.png',
                     '2016_11_13_18_08_19_p9220572.jpg',
-                    '2016_11_13_11_40_24_newsf.jpg'
+                    '2016_11_13_11_40_24_newsf.jpg',
+                    '1.jpg',
+                    '2.jpg',
+                    '3.jpg'
                 )),
                 'isi' => $faker->realText,
                 'path' => $faker->slug,
