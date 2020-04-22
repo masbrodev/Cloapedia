@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+// Route::get('/', function () {
+//     return view('pages.home');
+// });
 
 Route::get('/single.html', function () {
     return view('pages.detail');
@@ -21,4 +21,5 @@ Route::get('/single.html', function () {
 
 
 Route::get('/index.html', 'BeritaController@index');
+Route::get('/', 'BeritaController@index');
 Route::get('/berita/{path}', 'BeritaController@showBerita');
