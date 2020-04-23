@@ -17,13 +17,12 @@ class BeritaSeeder extends Seeder
             DB::table('beritas')->insert([
                 'judul' => $faker->sentence($nbWords = 6, $variableNbWords = true),
                 'kategori' => $faker->randomElement($array = array(
-                    'Nasional',
-                    'Otomotif',
-                    'Edukasi',
-                    'Ekonomi',
-                    'Teknologi',
-                    'Olahraga',
-                    'Health'
+                    'Fashion',
+                    'Makanan',
+                    'Gaya Hidup',
+                    'Travel',
+                    'vlogs',
+                    'Kesehatan'
                 )),
                 'foto' => $faker->randomElement($array = array(
                     '2016_11_14_15_40_24_android.jpg',
