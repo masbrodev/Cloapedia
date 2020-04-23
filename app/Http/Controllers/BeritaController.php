@@ -32,12 +32,15 @@ class BeritaController extends Controller
 
     public function index()
     {
-        $beritas     = Berita::orderBy('id', 'DESC')->paginate(3);
+        $beritas     = Berita::orderBy('id', 'DESC')->paginate(7);
         $slides      = Berita::orderBy('id', 'DESC')->limit(5)->get();
         $beritaSaran = Berita::whereMonth("created_at", $this->month)->whereYear("created_at", $this->year)->orderBy("dilihat", "DESC")->limit(3)->get();
 
+
+        // $gayahidup     = Berita::where('kategori')orderBy('id', 'DESC')->paginate(7);
+
         return view('pages.home', ['beritas' => $beritas, 'beritaBaru' => $this->beritaBaru, 'beritaPopuler' => $this->beritaPopuler, 'beritaSaran' => $beritaSaran, 'slides' => $slides, 'controller' => $this]);
-        // return $slides;
+        // return $beritas;
     }
 
 
