@@ -19,6 +19,9 @@ Route::get('/single.html', function () {
     return view('pages.detail');
 });
 
+Route::get('/c', function () {
+    return view('pages.contoh');
+});
 
 Route::get('/index.html', 'BeritaController@index');
 Route::get('/', 'BeritaController@index');
