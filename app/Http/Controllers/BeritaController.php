@@ -44,7 +44,7 @@ class BeritaController extends Controller
     }
 
 
-    public function showBerita($path)
+    public function detailBerita($path)
     {
         $berita = Berita::where('path', $path)->first();
         $berita->dilihat = $berita->dilihat + 1;
