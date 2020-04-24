@@ -69,7 +69,8 @@ class BeritaController extends Controller
 
         $likes    = Like::where('post_id', $berita->id)->get();
 
-        return view('berita', ['berita' => $berita, 'beritaBaru' => $this->beritaBaru, 'beritaPopuler' => $this->beritaPopuler, 'beritaTerkait' => $beritaTerkait, 'comments' => $comments, 'replies' => $replies, 'likes' => $likes, 'controller' => $this]);
+        return view('pages.detail', ['berita' => $berita, 'beritaBaru' => $this->beritaBaru, 'beritaPopuler' => $this->beritaPopuler, 'beritaTerkait' => $beritaTerkait, 'comments' => $comments, 'replies' => $replies, 'likes' => $likes, 'controller' => $this]);
+        // return $berita;
     }
 
     public function kategoriBerita($cat)
