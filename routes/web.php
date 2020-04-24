@@ -25,4 +25,4 @@ Route::get('/c', function () {
 
 Route::get('/index.html', 'BeritaController@index');
 Route::get('/', 'BeritaController@index');
-Route::get('/berita/{path}', 'BeritaController@showBerita');
+Route::get('/{path}', 'BeritaController@detailBerita');
