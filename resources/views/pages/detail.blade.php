@@ -8,36 +8,37 @@
                 <div class="page-wrapper">
                     <div class="blog-title-area">
                         <ol class="breadcrumb hidden-xs-down">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Blog</a></li>
-                            <li class="breadcrumb-item active">The golden rules you need to know for a positive life</li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/{{ $berita->kategori }}">{{ $berita->kategori }}</a></li>
+                            <li class="breadcrumb-item active">{{ $berita->judul }}</li>
                         </ol>
 
-                        <span class="color-aqua"><a href="blog-category-01.html" title="">Lifestyle</a></span>
+                        <span class="color-aqua"><a href="/{{ $berita->kategori }}" title="">{{ $berita->kategori }}</a></span>
 
-                        <h3>The golden rules you need to know for a positive life</h3>
+                        <h3>{{ $berita->judul }}</h3>
 
                         <div class="blog-meta big-meta">
                             <small><a href="single.html" title="">21 July, 2017</a></small>
                             <small><a href="blog-author.html" title="">by Jessica</a></small>
-                            <small><a href="#" title=""><i class="fa fa-eye"></i> 2344</a></small>
+                            <small><a href="#" title=""><i class="fa fa-eye"></i> {{ $berita->dilihat }}</a></small>
                         </div><!-- end meta -->
 
                         <div class="post-sharing">
                             <ul class="list-inline">
-                                <li><a href="#" class="fb-button btn btn-primary"><i class="fa fa-facebook"></i> <span class="down-mobile">Share on Facebook</span></a></li>
-                                <li><a href="#" class="tw-button btn btn-primary"><i class="fa fa-twitter"></i> <span class="down-mobile">Tweet on Twitter</span></a></li>
+                                <li><a href="#" class="fb-button btn btn-primary"><i class="fa fa-facebook"></i> <span class="down-mobile">bagikan di Facebook</span></a></li>
+                                <li><a href="#" class="tw-button btn btn-primary"><i class="fa fa-twitter"></i> <span class="down-mobile">Bagikan di Twitter</span></a></li>
                                 <li><a href="#" class="gp-button btn btn-primary"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
                         </div><!-- end post-sharing -->
                     </div><!-- end title -->
 
                     <div class="single-post-media">
-                        <img src="upload/menu_08.jpg" alt="" class="img-fluid">
+                        <img src="assets/img/{{ $berita->foto }}" alt="" class="img-fluid">
                     </div><!-- end media -->
 
                     <div class="blog-content">
                         <div class="pp">
+                        <p>{{ $berita->isi }}</p>
                             <p>In lobortis pharetra mattis. Morbi nec nibh iaculis, <a href="#">bibendum augue a</a>, ultrices nulla. Nunc velit ante, lacinia id tincidunt eget, faucibus nec nisl. In mauris purus, bibendum et gravida dignissim, venenatis commodo lacus. Duis consectetur quis nisi nec accumsan. Pellentesque enim velit, ut tempor turpis. Mauris felis neque, egestas in lobortis et,iaculis at nunc ac, rhoncus sagittis ipsum. </p>
 
                             <h3><strong>Maecenas non convallis quam, eu sodales justo. Pellentesque quis lectus elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></h3>
@@ -48,7 +49,7 @@
 
                         </div><!-- end pp -->
 
-                        <img src="upload/menu_05.jpg" alt="" class="img-fluid img-fullwidth">
+                        <img src="assets/upload/menu_05.jpg" alt="" class="img-fluid img-fullwidth">
 
                         <div class="pp">
                             <h3><strong>Nam non velit est. Sed lobortis arcu vitae nunc molestie consectetur. Nam eget neque ac ex fringilla dignissim eu ac est. Nunc et nisl vel odio posuere. </strong></h3>
@@ -67,7 +68,7 @@
 
                             <p>Proin ultricies nulla consectetur, sollicitudin dolor at, sollicitudin mauris. Maecenas at nunc nunc. Ut nulla felis, tincidunt et porttitor at, rutrum in dolor. Aenean id tincidunt ligula. Donec vitae placerat odio. Mauris accumsan nibh ut nunc maximus, ac auctor elit vehicula. Cras leo sem, vehicula a ultricies ac, condimentum vitae lectus. Sed ut eros euismod, luctus nisl eu, congue odio. </p>
 
-                            <p><img src="upload/blog_01.jpg" class="float-left" width="340" alt="">Suspendisse ultrices placerat dolor sed efficitur. Morbi in laoreet diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut massa id lectus laoreet porta non in metus. Donec nibh justo, tincidunt non justo ut, tincidunt malesuada turpis. Cras pellentesque sollicitudin ex eget pharetra.</p>
+                            <p><img src="assets/upload/blog_01.jpg" class="float-left" width="340" alt="">Suspendisse ultrices placerat dolor sed efficitur. Morbi in laoreet diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut massa id lectus laoreet porta non in metus. Donec nibh justo, tincidunt non justo ut, tincidunt malesuada turpis. Cras pellentesque sollicitudin ex eget pharetra.</p>
 
                             <h3><strong>Nam non velit est. Sed lobortis arcu vitae nunc molestie consectetur. Nam eget neque ac ex fringilla dignissim eu ac est. Nunc et nisl vel odio posuere. </strong></h3>
 
@@ -100,7 +101,7 @@
                         <div class="col-lg-12">
                             <div class="banner-spot clearfix">
                                 <div class="banner-img">
-                                    <img src="upload/banner_01.jpg" alt="" class="img-fluid">
+                                    <img src="assets/upload/banner_01.jpg" alt="" class="img-fluid">
                                 </div><!-- end banner-img -->
                             </div><!-- end banner -->
                         </div><!-- end col -->
@@ -115,7 +116,7 @@
                                     <div class="list-group">
                                         <a href="single.html" class="list-group-item list-group-item-action flex-column align-items-start">
                                             <div class="w-100 justify-content-between text-right">
-                                                <img src="upload/blog_square_02.jpg" alt="" class="img-fluid float-right">
+                                                <img src="assets/upload/blog_square_02.jpg" alt="" class="img-fluid float-right">
                                                 <h5 class="mb-1">5 Beautiful buildings you need to before dying</h5>
                                                 <small>Prev Post</small>
                                             </div>
@@ -129,7 +130,7 @@
                                     <div class="list-group">
                                         <a href="single.html" class="list-group-item list-group-item-action flex-column align-items-start">
                                             <div class="w-100 justify-content-between">
-                                                <img src="upload/blog_square_03.jpg" alt="" class="img-fluid float-left">
+                                                <img src="assets/upload/blog_square_03.jpg" alt="" class="img-fluid float-left">
                                                 <h5 class="mb-1">Let's make an introduction to the glorious world of history</h5>
                                                 <small>Next Post</small>
                                             </div>
@@ -146,7 +147,8 @@
                         <h4 class="small-title">About author</h4>
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                <img src="upload/author.jpg" alt="" class="img-fluid rounded-circle">
+                                <!-- <img src="assets/img/{{ $berita->foto }}" alt="" class="img-fluid rounded-circle"> -->
+                                <img src="assets/upload/author.jpg" alt="" class="img-fluid rounded-circle">
                             </div><!-- end col -->
 
                             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
@@ -175,7 +177,7 @@
                                 <div class="blog-box">
                                     <div class="post-media">
                                         <a href="single.html" title="">
-                                            <img src="upload/menu_06.jpg" alt="" class="img-fluid">
+                                            <img src="assets/upload/menu_06.jpg" alt="" class="img-fluid">
                                             <div class="hovereffect">
                                                 <span class=""></span>
                                             </div><!-- end hover -->
@@ -193,7 +195,7 @@
                                 <div class="blog-box">
                                     <div class="post-media">
                                         <a href="single.html" title="">
-                                            <img src="upload/menu_07.jpg" alt="" class="img-fluid">
+                                            <img src="assets/upload/menu_07.jpg" alt="" class="img-fluid">
                                             <div class="hovereffect">
                                                 <span class=""></span>
                                             </div><!-- end hover -->
@@ -218,7 +220,7 @@
                                 <div class="comments-list">
                                     <div class="media">
                                         <a class="media-left" href="#">
-                                            <img src="upload/author.jpg" alt="" class="rounded-circle">
+                                            <img src="assets/upload/author.jpg" alt="" class="rounded-circle">
                                         </a>
                                         <div class="media-body">
                                             <h4 class="media-heading user_name">Amanda Martines <small>5 days ago</small></h4>
@@ -228,7 +230,7 @@
                                     </div>
                                     <div class="media">
                                         <a class="media-left" href="#">
-                                            <img src="upload/author_01.jpg" alt="" class="rounded-circle">
+                                            <img src="assets/upload/author_01.jpg" alt="" class="rounded-circle">
                                         </a>
                                         <div class="media-body">
 
@@ -241,7 +243,7 @@
                                     </div>
                                     <div class="media last-child">
                                         <a class="media-left" href="#">
-                                            <img src="upload/author_02.jpg" alt="" class="rounded-circle">
+                                            <img src="assets/upload/author_02.jpg" alt="" class="rounded-circle">
                                         </a>
                                         <div class="media-body">
 
@@ -293,7 +295,7 @@
                             <div class="list-group">
                                 <a href="single.html" class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="w-100 justify-content-between">
-                                        <img src="upload/blog_square_01.jpg" alt="" class="img-fluid float-left">
+                                        <img src="assets/upload/blog_square_01.jpg" alt="" class="img-fluid float-left">
                                         <h5 class="mb-1">5 Beautiful buildings you need to before dying</h5>
                                         <small>12 Jan, 2016</small>
                                     </div>
@@ -301,7 +303,7 @@
 
                                 <a href="single.html" class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="w-100 justify-content-between">
-                                        <img src="upload/blog_square_02.jpg" alt="" class="img-fluid float-left">
+                                        <img src="assets/upload/blog_square_02.jpg" alt="" class="img-fluid float-left">
                                         <h5 class="mb-1">Let's make an introduction for creative life</h5>
                                         <small>11 Jan, 2016</small>
                                     </div>
@@ -309,7 +311,7 @@
 
                                 <a href="single.html" class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="w-100 last-item justify-content-between">
-                                        <img src="upload/blog_square_03.jpg" alt="" class="img-fluid float-left">
+                                        <img src="assets/upload/blog_square_03.jpg" alt="" class="img-fluid float-left">
                                         <h5 class="mb-1">Did you see the most beautiful sea in the world?</h5>
                                         <small>07 Jan, 2016</small>
                                     </div>
@@ -330,15 +332,15 @@
                     <div class="widget">
                         <h2 class="widget-title">Instagram Feed</h2>
                         <div class="instagram-wrapper clearfix">
-                            <a class="" href="#"><img src="upload/insta_01.jpeg" alt="" class="img-fluid"></a>
-                            <a href="#"><img src="upload/insta_02.jpeg" alt="" class="img-fluid"></a>
-                            <a href="#"><img src="upload/insta_03.jpeg" alt="" class="img-fluid"></a>
-                            <a href="#"><img src="upload/insta_04.jpeg" alt="" class="img-fluid"></a>
-                            <a href="#"><img src="upload/insta_05.jpeg" alt="" class="img-fluid"></a>
-                            <a href="#"><img src="upload/insta_06.jpeg" alt="" class="img-fluid"></a>
-                            <a href="#"><img src="upload/insta_07.jpeg" alt="" class="img-fluid"></a>
-                            <a href="#"><img src="upload/insta_08.jpeg" alt="" class="img-fluid"></a>
-                            <a href="#"><img src="upload/insta_09.jpeg" alt="" class="img-fluid"></a>
+                            <a class="" href="#"><img src="assets/upload/insta_01.jpeg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="assets/upload/insta_02.jpeg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="assets/upload/insta_03.jpeg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="assets/upload/insta_04.jpeg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="assets/upload/insta_05.jpeg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="assets/upload/insta_06.jpeg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="assets/upload/insta_07.jpeg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="assets/upload/insta_08.jpeg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="assets/upload/insta_09.jpeg" alt="" class="img-fluid"></a>
                         </div><!-- end Instagram wrapper -->
                     </div><!-- end widget -->
 
